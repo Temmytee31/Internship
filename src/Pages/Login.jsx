@@ -3,7 +3,7 @@ import drum from '../../src/assets/drum.png';
 
 const Login = () => {
   return (
-    <div className='md:mt-[250px]'>
+    <div className='md:mt-[150px] mb-[150px]'>
         <div className='flex pt-12 justify-center  items-center pb-6'>
             <img src={drum} alt='' className='w-6 h-6'></img>
             <h6 className='text-[#101828] font-bold text-xl text-center'>trackeet</h6>

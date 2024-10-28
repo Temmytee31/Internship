@@ -31,7 +31,7 @@ const Personal = () => {
                     <h6 className='text-[#344054] text-[14px] font-bold '>Your Photo</h6>
                     <p className='text-[#475467] text-[14px]'>This will be displayed on your profile.</p>
                 </div>
-                <div className='flex mb-[16px] pt-[16px]  '>
+                <div className='flex justify-between mb-[16px] pt-[16px]  '>
                     <span className="bg-[#F2F4F7] text-[#475467] font-bold rounded-full h-[64px] w-[64px] flex items-center justify-center">PJ</span>
                     <div className='border-[1px] border-[#E4E7EC] rounded-xl w-[190px] text-center items-center justify-center pb-[16px] cursor-pointer ml-[10px] md:w-[290px] md:pl-[50px] md:pr-[50px] lg:w-[350px]'>
                         <img className='m-auto pt-[16px]' src={tree} alt=''/>

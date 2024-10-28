@@ -4,11 +4,12 @@ import './App.css';
 import Login from './Pages/Login';
 import Check from './Pages/Check/Check';
 import Reset from './Pages/Reset/Reset';
-import Password from './Pages/Password/Password';
+import Password from './Pages/Password/Password'; 
 import Personal from './Pages/Setting/Personal';
 import Business from './Pages/Setting/Business';
 import Security from './Pages/Setting/Security';
-import Delete from './Pages/Setting/Delete';
+import Delete from './Pages/Setting/Modal';
+import Modal from './Pages/Setting/Modal';
 
 
 const App = () =>  {
@@ -24,7 +25,7 @@ const App = () =>  {
         <Route path='personal' element= {<Personal/>}/>
         <Route path='business' element= {<Business/>}/>
         <Route path='security' element= {<Security/>}/>
-        <Route path='delete' element= {<Delete/>}/>
+        <Route path='modal' element= {<Modal/>}/>
       </Routes>
     </BrowserRouter>
   )

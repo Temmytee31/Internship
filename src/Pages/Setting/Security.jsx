@@ -1,7 +1,20 @@
-import React from 'react'
-import Delete from './Delete'
+import { useState } from 'react'
+import trasg from "../../assets/trash.png";
+import Modal from './Modal';
+
 
 const Security = () => {
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleDeleteClick = () => setShowModal(true);
+    const handleCloseModal = () => setShowModal(false);
+    const handleConfirmDelete = () => {
+    // Add delete logic here
+    console.log('Account deleted');
+    setShowModal(false);
+  };
+
   return (
     <div className='ml-[16px] mr-[16px] '>
         <h3 className='text-[#101828] text-[24px] font-bold pl-[16px] pr-[16] pt-[32px] lg:text-[30px]'>Settings</h3>
@@ -39,9 +52,10 @@ const Security = () => {
                     <p className='text-[#475467] text-[14px] pb-[16px] font-medium '>By deleting your account, you will permanently lose access to all your data and forfeit the ability to create or modify any information.</p>
                 </div>
                 <div className='border-b-[1px] border-[#E4E7EC] w-[100%] mb-[16px]'></div>
-                <h6 className='text-[#D92D20] text-[14px] font-bold  cursor-pointer text-end'>Delete</h6>
+                <h6 className='text-[#D92D20] text-[14px] font-bold  cursor-pointer text-end' onClick={handleDeleteClick}>Delete</h6>
             </div>
         </div>
+        <Modal isVisible={showModal} onClose={handleCloseModal} onConfirm={handleConfirmDelete} />
     </div>
   )
 }
